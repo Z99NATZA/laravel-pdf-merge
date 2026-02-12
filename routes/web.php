@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pdf-merge');
 });
 
 Route::post('/pdf-merge', [App\Http\Controllers\PdfMergeController::class, 'merge'])->name('pdf.merge');

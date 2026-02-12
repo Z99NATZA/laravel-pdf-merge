@@ -21,7 +21,9 @@ class PdfMergeController extends Controller
 
         $pdf = PDFMergerFacade::init();
 
-        foreach ($request->file('pdfs') as $file) {
+        $files = $request->file('pdfs');
+
+        foreach ($files as $file) {
 
             $path = $file->store('temp', 'private');
 
