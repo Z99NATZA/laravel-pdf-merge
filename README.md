@@ -11,3 +11,5 @@ Run the project:
 ```bash
 php artisan serve
 ```
+
+Default url at: `http://localhost:8000`
